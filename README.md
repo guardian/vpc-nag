@@ -3,7 +3,10 @@
 This is a basic script to quickly audit your account VPCs.
 
     $ go install github.com/guardian/vpc-nag
-    $ vpc-nag --profile [AWS_PROFILE]
+    $ vpc-nag --accountId [AWS_ACCOUNT_ID]
+
+`vpc-nag` uses Prism behind the scenes so you will need to be on the VPC/in the
+office to run it.
 
 If you need to install Go, run:
 

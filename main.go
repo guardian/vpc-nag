@@ -59,7 +59,7 @@ func main() {
 
 	prismResponse := PrismResponse{}
 	err = json.Unmarshal(data, &prismResponse)
-	check(err, "unabable to unmarshal")
+	check(err, "unable to unmarshal")
 
 	accountVPCs := Filter(prismResponse.Data.VPCs, func(vpc PrismVPC) bool {
 		return vpc.AccountID == *accountID
